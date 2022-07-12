@@ -1,0 +1,169 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: #acc1ea;
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+h1 { 
+    font-weight: normal;
+    margin: auto;
+    background: white;
+    line-height: 2.5em;
+  
+}
+
+div.wrapper {
+    background-color: white;
+    overflow: auto;
+    
+}
+
+h3.contact {
+    text-align: left;
+    margin-left: 2%;
+}
+
+h2.contactsubheader { 
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+img.logo {
+    width: 20%;  
+}
+
+p {
+    
+    margin: 1em 1em;
+    
+}
+
+
+h2, h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+
+a {
+    color:#3862c5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: #c9981e;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+img.logo{
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 25%;
+}
+
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    img.desktop {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    
+    
+    img.tablet, img.phone {
+        display: none;
+    }
+    
+    p {
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: justify;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    img.tablet {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      
+    }
+    
+    img.desktop, img.phone {
+        display: none;
+    }
+
+    p {
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: justify;
+        
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    img.phone {
+        width: 100%;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+}
+
+
